@@ -1,0 +1,56 @@
+:root{
+    --main-color:#000;
+    --secondary-color: #f2595e;
+    --font-color: #fff;
+}
+body{
+    background-color: var(--main-color);
+    margin: 0;
+    padding: 0;
+}
+.gallery{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.gallery img{
+    width: 100vw;
+}
+.photoNumber{
+    width: 60%;
+    height: 45px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 25px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    outline: 0;
+    background-color: var(--main-color);
+    color: var(--font-color);
+    text-align: center;
+}
+.input{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
+    padding-top: 20px;
+}
+.lewo, .prawo{
+    width: 20%;
+    height: 45px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 25px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: var(--font-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
