@@ -25,7 +25,7 @@ function handleTouchStart(event) {
 function handleTouchMove(event) {
     if (event.touches.length === 1) {
         const touch = event.touches[0];
-        if (touch.clientX < prevTouch) {
+        if (touch.clientX < prevTouch - 100) {
             const input = document.querySelector('.photoNumber');
             document.querySelector(`.img${input.value}`).animate(  [
                 // keyframes
@@ -40,7 +40,7 @@ function handleTouchMove(event) {
             timeOut();
 
         }
-        else{
+        else if (touch.clientX > prevTouch + 100) {
             const input = document.querySelector('.photoNumber');
             document.querySelector(`.img${input.value}`).animate(  [
                 // keyframes
